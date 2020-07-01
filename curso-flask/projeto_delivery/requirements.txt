@@ -1,4 +1,1 @@
 flask
-redis
-black
-isort

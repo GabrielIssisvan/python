@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-        - ./projeto_delivery:/usr/app
+        - ./projeto_delivery:/usr/app/
     environment:
         FLASK_ENV: development
   redis:
