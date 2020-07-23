@@ -10,6 +10,12 @@ do
             echo "Creating DB"
             flask create-db
             echo "DB has been created"
+            flask create-db
+
+            echo "DB upgrade"
+            flask db upgrade
+            echo "DB has been upgraded"
+            echo "Enjoy it..."   
             break
         else
             echo "Flask is not running yet"

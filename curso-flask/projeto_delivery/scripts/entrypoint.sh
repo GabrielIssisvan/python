@@ -8,7 +8,7 @@ echo ">>>>  Running FLASK<<"
 flask "run" 
 
 #File has been separated because it is simple to manage and also because os break statement
-#Please have a loon on database.sh
+#Please have a look on database.sh
 ###########################################################################################
 # echo ">>>>  Waiting 5000 port to be running<<<<"
 # # use while loop to check if flask is running 
