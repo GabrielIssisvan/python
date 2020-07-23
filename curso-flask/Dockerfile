@@ -6,4 +6,8 @@ RUN apk add --no-cache gcc musl-dev linux-headers
 COPY * /usr/app/
 
 RUN pip install -e .['dev']
-CMD ["flask", "run"]
+
+RUN ["chmod", "+x", "./scripts/database.sh"]
+RUN ["chmod", "+x", "./scripts/entrypoint.sh"]
+
+CMD ["sh","./scripts/entrypoint.sh"]
